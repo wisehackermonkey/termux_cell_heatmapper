@@ -1,5 +1,6 @@
 import os
 import subprocess
+import csv
 # Termux Cell Heatmapper
 # by wisemonkey
 # 20171205
@@ -10,3 +11,7 @@ get_signal_strength_command = "dir ."
 signal_strength_json = os.popen(get_signal_strength_command).read()
 
 print(signal_strength_json)
+
+with open('data.csv', 'w') as file:
+	csv_file = csv.writer(file)
+	csv_file.writerow(["asdf","asd"]) #todo get json to here in [loc, dbm]
