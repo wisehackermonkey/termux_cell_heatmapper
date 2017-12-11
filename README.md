@@ -27,5 +27,5 @@ with google docs
 
 
 # links
-todo
+[how to get termianl ouput into a string var](https://stackoverflow.com/questions/20140137/passing-variables-to-subprocess-popen)
 
