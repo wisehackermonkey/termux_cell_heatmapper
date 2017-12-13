@@ -26,6 +26,12 @@ open the ouput file
 with google docs
 
 
+## todo
+add comments/header to
+`
+main_V2.py
+`
+
 # links
 [how to get termianl ouput into a string var](https://stackoverflow.com/questions/20140137/passing-variables-to-subprocess-popen)
 
