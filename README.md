@@ -29,7 +29,7 @@ with google docs
 ## todo
 add comments/header to
 `
-> main_V2.py
+- main_V2.py
 `
 
 # links
