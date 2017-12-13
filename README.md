@@ -9,8 +9,8 @@ for use with mapping using google drive's fusion mapper to create a map
 # install
 from google play store install
 `
-termux
-termux-api
+- termux
+- termux-api
 `
 
 set up sd card storage with use in termux
@@ -35,3 +35,6 @@ add comments/header to
 # links
 [how to get termianl ouput into a string var](https://stackoverflow.com/questions/20140137/passing-variables-to-subprocess-popen)
 
+https://docs.python.org/2/library/csv.html
+https://docs.python.org/2/library/csv.html#csv.list_dialects
+https://docs.python.org/3.5/library/datetime.html#module-datetime
