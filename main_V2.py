@@ -2,7 +2,9 @@
 import json
 import csv
 #todo https://docs.python.org/3.5/library/datetime.html#module-datetime
-
+#todo 171214 file not found errror handling
+#todo 171214 fix csv output having extra inserted blank row
+#https://docs.python.org/2/library/csv.html
 shell_command_get_gps_location = "type json.json.txt"#"termux-location -p gps -r once"
 shell_command_get_cell_signstrength = "type json.json.txt"#"termux-telephony-cellinfo"
 
@@ -10,7 +12,7 @@ shell_command_get_cell_signstrength = "type json.json.txt"#"termux-telephony-cel
 
 
 with open('heatmap.csv', 'a+') as csvfile:
-	heatmap = csv.writer(csvfile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
+	heatmap = csv.writer(csvfile, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 
 	location = ''
 	signal = ''
@@ -22,4 +24,4 @@ with open('heatmap.csv', 'a+') as csvfile:
 		signal = json.loads(signal_json.read())
 		print(signal)
 
-	heatmap.writerow([location["id"]] + [signal["id"]])
+	heatmap.writerow([str.strip(location["id"]),  str.strip(signal["author"])])
