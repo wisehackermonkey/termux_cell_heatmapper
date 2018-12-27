@@ -18,8 +18,8 @@ termux
 `
 - cd /storage/downloads
 - apt git
-- git clone <Project github link here- 
-- cd /projectname/
+- git clone https://github.com/wisehackermonkey/termux_cell_heatmapper.git
+- cd termux_cell_heatmapper/
 - python main.py
 `
 open the ouput file
