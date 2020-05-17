@@ -15,20 +15,17 @@ from google play store install
 
 set up sd card storage with use in termux
 termux
-`
-- cd /storage/downloads
-- apt git
-- git clone https://github.com/wisehackermonkey/termux_cell_heatmapper.git
-- cd termux_cell_heatmapper/
-- python main.py
-`
-open the ouput file
-with google docs
+- `cd /storage/downloads`
+- `apt git`
+- `git clone https://github.com/wisehackermonkey/termux_cell_heatmapper.git`
+- `cd termux_cell_heatmapper/`
+- `python main.py`
+
+#### open the ouput file with google docs
 
 
 ## todo
-add comments/header to
-
+- add comments/header to
 - main_V2.py
 
 
